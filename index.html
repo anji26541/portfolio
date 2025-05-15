@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Anjaneyulu Portfolio</title>
+    <!-- Adding Media Queries for Mobile Responsiveness -->
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Anjaneyulu <span>Konakanchi</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="https://i.postimg.cc/gJxcPQD3/img-2.jpg" alt="Home Image">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Anjaneyulu Konakanchi</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">Python Full Stack Developer<span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am an aspiring Computer Science student with a strong foundation in Programming Languages, hands-on experience in software development, and academic projects. Motivated to contribute to innovative software solutions.</p>
+                <div class="social-links">
+                    <a href="https://github.com/anji26541" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/anjaneyulu-konakanchi-5bb6b0322/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <a href="https://drive.google.com/file/d/18tpHn5BCeI3utvjCPMj3EL_4HGfmnKEf/view?usp=drivesdk.pdf" download="Anjaneyulu_Konakanchi.pdf" style="text-decoration: none;">
+                        <button>Download my resume</button>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+     <section id="about" style="background-color: #0c0c0c; color: #ffffff; padding: 50px 0;">
+        <div class="main-container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <div class="section-name">
+                <h2 style="font-size: 2.8em; margin-bottom: 40px; text-decoration: underline; color: #38c808;">About</h2>
+            </div>
+
+        <!-- First Set of Boxes (Introduction & Passion) -->
+         <div class="content" style="display: flex; justify-content: space-between; gap: 40px; padding: 0 20px;">
+            <div class="about-box" style="background-color: #1a1a1a; border-radius: 10px; width: 48%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 350px; border: 5px solid #d45c00ec; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);">
+                <strong style="color: #d45c00ec; text-align: center; font-size: 1.5em;">Me</strong>
+                <span style="margin-top: 10px; font-size: 1.1em; text-align: center;">Hi, I'm Anjaneyulu Konakanchi, a Computer Science graduate from Kalasalingam Academy of Research and Education, located in Madurai, Tamil Nadu. I graduated in 2024.</span>
+            </div>
+            <div class="about-box" style="background-color: #1a1a1a; border-radius: 10px; width: 48%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 350px; border: 5px solid #8e0550; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);">
+                <strong style="color: #8e0550; text-align: center; font-size: 1.5em;">Passion</strong>
+                <span style="margin-top: 10px; font-size: 1.1em; text-align: center;">I am passionate about programming and enjoy solving complex problems using technology. Throughout my academic journey, I have developed several projects utilizing Python, Web Technologies, and Machine Learning.</span>
+            </div>
+        </div>
+
+        <!-- Second Set of Boxes (Location & Goal) -->
+        <div class="content" style="display: flex; justify-content: space-between; gap: 40px; padding: 20px 20px;">
+            <div class="about-box" style="background-color: #1a1a1a; border-radius: 10px; width: 48%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 250px; border: 5px solid #00bcd4; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);">
+                <strong style="color: #00bcd4; text-align: center; font-size: 1.5em;">Location</strong>
+                <span style="margin-top: 10px; font-size: 1.1em; text-align: center;">Originally from Ongole, Andhra Pradesh, I am currently residing in Kukatpally, Hyderabad.</span>
+            </div>
+            <div class="about-box" style="background-color: #1a1a1a; border-radius: 10px; width: 48%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 250px; border: 5px solid #440971; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);">
+                <strong style="color: #440971; text-align: center; font-size: 1.5em;">Goal</strong>
+                <span style="margin-top: 10px; font-size: 1.1em; text-align: center;">My goal is to contribute to innovative solutions in the tech industry and continue to grow in the field of technology.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Skills Section -->
+<section id="skills" style="background-color: #080808; color: #ffffff; padding: 50px 0;">
+    <div class="main-container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <!-- Section Title -->
+        <div class="section-name">
+            <h2 style="font-size: 2.8em; margin-bottom: 40px; text-decoration: underline; color: #039903;">Skills</h2>
+        </div>
+        <!-- Skills Content -->
+        <div class="content" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <!-- Programming Languages -->
+            <div class="skill-box" style="background-color: #1a1a1a; border-radius: 50%; width: 150px; height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 3px solid #00ff00; box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3);">
+                <strong style="color: #00ff00; text-align: center;">Programming<br>Languages</strong>
+                <span style="margin-top: 10px; font-size: 0.9em;">Python</span>
+            </div>
+            <!-- Web Technologies -->
+            <div class="skill-box" style="background-color: #1a1a1a; border-radius: 50%; width: 150px; height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 3px solid #ff9800; box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);">
+                <strong style="color: #ff9800; text-align: center;">Web<br>Technologies</strong>
+                <span style="margin-top: 10px; font-size: 0.9em;">HTML, CSS, JavaScript, Flask</span>
+            </div>
+            <!-- Database -->
+            <div class="skill-box" style="background-color: #1a1a1a; border-radius: 50%; width: 150px; height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 3px solid #2196f3; box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);">
+                <strong style="color: #2196f3; text-align: center;">Database</strong>
+                <span style="margin-top: 10px; font-size: 0.9em;">MySQL</span>
+            </div>
+            <!-- Tools and IDEs -->
+            <div class="skill-box" style="background-color: #1a1a1a; border-radius: 50%; width: 150px; height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 3px solid #ff5722; box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff5722; text-align: center;">Tools &<br>IDEs</strong>
+                <span style="margin-top: 10px; font-size: 0.9em;">Git, GitHub, Visual Studio Code</span>
+            </div>
+            <!-- Relevant Courses -->
+            <div class="skill-box" style="background-color: #1a1a1a; border-radius: 50%; width: 150px; height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 3px solid #9c27b0; box-shadow: 0 4px 10px rgba(156, 39, 176, 0.3);">
+                <strong style="color: #9c27b0; text-align: center;">Relevant<br>Courses</strong>
+                <span style="margin-top: 10px; font-size: 0.9em;">Machine Learning</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+             
+
+<!-- Projects Section -->
+<section id="projects" style="background-color: #0c0c0c; color: #ffffff; padding: 50px 0;">
+    <div class="main-container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <div class="section-name">
+            <h2 style="font-size: 2.8em; margin-bottom: 40px; text-decoration: underline; color: #3ea005;">Projects</h2>
+        </div>
+        <div class="content" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+            <!-- Project 1: E-Commerce Website Using Flask -->
+            <div class="project-box" style="background-color: #1a1a1a; border-radius: 10px; width: 48%; min-height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 5px solid #2196f3; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);">
+                <strong style="color: #2196f3; text-align: center; font-size: 1.5em;">E-Commerce Website Using Flask</strong>
+                <span style="margin-top: 10px; font-size: 1.1em;">Developed a real-time online shopping platform using Flask, MySQL, HTML, CSS, and JavaScript. The website enables users to browse products, manage carts, and securely complete purchases with authentication and payment integration. Showcases expertise in Flask, frontend development, and database management.</span>
+                <button><a href="https://github.com/anji26541/E-commerce-website-using-flask.git" target="_blank">GitHub</a></button>
+            </div>
+            <!-- Project 2: Crop Disease Detection -->
+            <div class="project-box" style="background-color: #1a1a1a; border-radius: 10px; width: 43%; min-height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 5px solid #ff9800; box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);">
+                <strong style="color: #ff9800; text-align: center; font-size: 1.5em;">Crop Disease Detection</strong>
+                <span style="margin-top: 10px; font-size: 1.1em;">A web application that detects crop diseases using CNN, provides pesticide recommendations, and suggests secondary crops based on the disease detected. Built using Python, MySQL, and frontend technologies.</span>
+                <button><a href="https://github.com/anji26541/Potato-Leaf-Disease-Classification-Using-Deep-Learning-Techniques-and-Pesticides-Suggesting-.git" target="_blank">GitHub</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" style="background-color: #070707; color: #ffffff; padding: 50px 0;">
+    <div class="main-container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <div class="section-name">
+            <h2 style="font-size: 2.8em; margin-bottom: 40px; text-decoration: underline; color: #10a905;">Contact</h2>
+        </div>
+        <div class="content" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; padding: 0 20px;">
+            <div class="contact-box" style="background-color: #1a1a1a; border-radius: 10px; width: 90%; min-height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 5px solid #d60909; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);">
+                <strong style="color: #b10718; text-align: center; font-size: 1.5em;">Email</strong>
+                <span style="margin-top: 10px; font-size: 1.1em;"><a href="mailto:anjaneyulukonakanchi2@gmail.com" style="color: #b3b1b1d5; text-decoration: none;">anjaneyulukonakanchi2@gmail.com</a></span>
+            </div>
+            <div class="contact-box" style="background-color: #1a1a1a; border-radius: 10px; width: 90%; min-height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 5px solid #b608dd; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);">
+                <strong style="color: #b608dd; text-align: center; font-size: 1.5em;">Phone</strong>
+                <span style="margin-top: 10px; font-size: 1.1em;"><a href="tel:+91 7671993342" style="color: #00bcd4; text-decoration: none;">+91-7671993342</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
