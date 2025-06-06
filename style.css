@@ -110,7 +110,7 @@ nav {
 }
 
 .dropdown .links a:hover {
-    background-color: #077b32;
+    background-color: #3c032f;
 }
 
 section {
@@ -144,7 +144,7 @@ section {
 
 .main-container .image img {
     width: 100%;
-    height: 110%;
+    height: 100%;
 }
 
 .main-container .image:hover {
